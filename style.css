@@ -1,0 +1,53 @@
+body {
+  background-color: rgb(22, 22, 22);
+
+}
+
+.container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 70%;
+  width: 60%;
+}
+
+div input,
+.botout {
+  width: 85%;
+  margin: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+div input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 8px;
+  border: 1px solid #474646;
+  border-radius: 5px;
+  background-color: rgb(14, 14, 14);
+  color: #ccc;
+}
+ div input:focus {
+  background-color: rgb(14, 14, 14);
+  color: #ccc;
+ }
+
+.container div button {
+  padding: 8px 16px;
+  float: left;
+  width: 5rem;
+  margin: 0 5px;
+  background-color: #252525;
+  color: #fff;
+  border: 1px solid #474646;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.botout {
+  white-space: pre-wrap;
+  color: #ccc;
+}
+

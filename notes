@@ -1,0 +1,28 @@
+let userPrompt = message.content;
+            console.log('\n');
+            console.log("user prompt: " + userPrompt);
+            let botReply = " ";
+            console.log('\n');
+            console.log("Bot reply: " + botReply);
+
+            run();
+
+            console.log('\n');
+            console.log("Bot reply: " + botReply);
+
+
+
+             message.reply(botReply);
+        async function run() {
+
+            console.log('\n');
+            console.log("user prompt: " + userPrompt);
+            const result = await chatSession.sendMessage(userPrompt);
+            console.log(result.response.text());
+            botReply = await result.response.text();
+            console.log('\n');
+            console.log("Bot response: " + botReply);
+        }
+    });
+}
+    });
